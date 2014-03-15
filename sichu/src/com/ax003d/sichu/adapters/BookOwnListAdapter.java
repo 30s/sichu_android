@@ -36,10 +36,12 @@ public class BookOwnListAdapter extends BaseAdapter implements Filterable {
 
 	public void addBookOwn(BookOwn own) {
 		bookownsAll.add(own);
+		bookowns.add(own);
 	}
 
 	public void clearBookOwn() {
 		bookownsAll.clear();
+		bookowns.clear();
 	}
 
 	@Override
@@ -104,6 +106,7 @@ public class BookOwnListAdapter extends BaseAdapter implements Filterable {
 
 	public void prependBookOwn(BookOwn own) {
 		bookownsAll.add(0, own);
+		bookowns.add(0, own);
 	}
 
 	@Override

@@ -255,7 +255,6 @@ public class BooksMineFragment extends Fragment implements
 		do {
 			adapter.addBookOwn(new BookOwn(data));
 		} while (data.moveToNext());
-		adapter.getFilter().filter("");
 	}
 
 	@Override
