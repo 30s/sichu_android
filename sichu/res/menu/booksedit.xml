@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="@string/menu_more">
+        <menu>
+            <item
+                android:id="@+id/menu_borrow_record"
+                android:icon="@drawable/ic_action_cc_bcc"
+                android:title="@string/menu_borrow_record"/>
+        </menu>
+    </item>
+
+</menu>

@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
+import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.Window;
 import com.ax003d.sichu.api.ISichuAPI;
 import com.ax003d.sichu.api.SichuAPI;
@@ -73,6 +74,12 @@ public class BooksEditActivity extends Activity implements OnClickListener {
 		edit_remark.setText(mBookOwn.getRemark());
 
 		setSupportProgressBarIndeterminateVisibility(false);
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getSupportMenuInflater().inflate(R.menu.booksedit, menu);
+		return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override

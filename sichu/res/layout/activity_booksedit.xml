@@ -115,28 +115,34 @@
                 android:hint="@string/hint_edit_remark"
                 android:singleLine="false" />
 
-            <Button
-                android:id="@+id/btn_save"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_below="@id/edit_remark"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/selector_btn_brown"
-                android:focusableInTouchMode="true"
-                android:text="@string/btn_save" >
+                android:layout_marginTop="10dp" >
 
-                <requestFocus />
-            </Button>
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector_btn_brown"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/btn_save" >
 
-            <Button
-                android:id="@+id/btn_delete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_save"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/selector_btn_gray"
-                android:text="@string/btn_delete" />
+                    <requestFocus />
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/selector_btn_gray"
+                    android:text="@string/btn_delete" />
+            </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
 

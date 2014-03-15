@@ -187,5 +187,6 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="settings">Settings</string>
-
+	<string name="menu_borrow_record">Borrow Records</string>
+    
 </resources>
