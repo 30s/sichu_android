@@ -19,26 +19,38 @@
         android:id="@+id/et_borrower"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="@string/hint_borrower" />
 
-    <EditText
-        android:id="@+id/et_borrow_date"
+    <Button
+        android:id="@+id/btn_borrow_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_borrow_date"
-        android:inputType="date" />
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_btn_gray"
+        android:text="@string/hint_borrow_date" />
 
-    <EditText
-        android:id="@+id/et_returned_date"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_returned_date"
-        android:inputType="date" />
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:background="#FED980"
+        android:text="@string/warn_returned_date" />
+
+    <Button
+        android:id="@+id/btn_returned_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_btn_gray"
+        android:text="@string/hint_returned_date" />
 
     <EditText
         android:id="@+id/et_remark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="@string/hint_borrow_remark" />
 
     <Button

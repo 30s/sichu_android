@@ -191,7 +191,8 @@
     <string name="title_activity_borrow_record">Borrow Record</string>
     <string name="hint_borrower">Borrower</string>
     <string name="hint_borrow_date">Borrow Date</string>
-    <string name="hint_returned_date">Returned Date</string>
+    <string name="hint_returned_date">Do not set returned date or set it earlier than borrowed date, if the book is not returned.</string>
     <string name="hint_borrow_remark">Remark</string>
+    <string name="warn_returned_date">Do not set returned date or set it earlier than borrowed date, if the book is not returned.</string>
 
 </resources>
