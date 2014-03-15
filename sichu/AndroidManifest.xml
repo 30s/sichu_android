@@ -230,6 +230,10 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.ax003d.sichu.BorrowRecordActivity"
+            android:label="@string/title_activity_borrow_record" >
+        </activity>
     </application>
 
 </manifest>

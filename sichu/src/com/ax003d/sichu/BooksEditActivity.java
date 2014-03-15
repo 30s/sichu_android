@@ -23,6 +23,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
 import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.Window;
 import com.ax003d.sichu.api.ISichuAPI;
 import com.ax003d.sichu.api.SichuAPI;
@@ -82,6 +83,16 @@ public class BooksEditActivity extends Activity implements OnClickListener {
 		return super.onCreateOptionsMenu(menu);
 	}
 
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		if (item.getItemId() == R.id.menu_borrow_record) {
+			Intent intent = new Intent(this, BorrowRecordActivity.class);
+			intent.putExtra("bookown", mBookOwn);
+			startActivity(intent);
+		}
+		return super.onMenuItemSelected(featureId, item);
+	}
+	
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
