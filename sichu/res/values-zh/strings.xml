@@ -186,6 +186,6 @@
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="menu_borrow_record">借阅记录</string>
+    <string name="menu_borrow_record">添加借阅记录</string>
 
 </resources>
